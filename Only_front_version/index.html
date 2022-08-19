@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/db2bf29261.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <title>CoreUI-Page</title>
+    <!-- <script>import Example from './exemple.vue'</script> -->
+</head>
+
+    
+    <body style="margin : 0px; margin-right: 50px;">
+    <script src="https://unpkg.com/vue@3"></script>
+
+<div class="all">
+
+                                            <!-- sidebar -->
+        <!-- <script>import sidebar from './sidebar.vue'
+        
+        </script>
+
+        <messsage class="succes" :message"message"></messsage> -->
+
+        <div class="sidebar">
+            <div style="text-align:center;"><img src="coreui.png" alt="coreui" style="width: 100px;height: 70px;"></div>
+
+            <div style="width: 170px;">
+                <i class="fa-solid fa-gauge-high"></i> &nbsp Dashboard
+            </div>
+
+            <div>
+                THEME
+                <br><br>
+                <div style="display:flex;">
+                    <div>
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <div>
+                        &nbsp &nbsp Colors
+                    </div>
+                </div>
+                <br>
+                <i class="fa-solid fa-pen"></i>
+                &nbsp Typography
+            </div>
+        
+            <div>
+<br>
+                COMPONENTS
+            <br>
+                <div class="base">
+                    <div style="display :flex; justify-content: space-between;">
+                        <div onclick="show()" style="margin: 8px;">
+                            <span>
+                                <i class="fa-solid fa-earth-americas"></i>
+                            </span>
+                            <span style="cursor:pointer;">
+                                &nbsp Base
+                            </span>
+                        </div>
+                        <div style="margin: 8px;">></div>
+                    </div>
+                    <div class="sous_base" style="display: none;">
+                        [sous-section]
+                    </div>
+                    
+                </div>    
+        
+                
+                <div class="button">
+                    <div style="display :flex; justify-content: space-between;">
+                        <div onclick="show2()" style="margin: 8px;" >
+                            <i class="fa-solid fa-arrow-pointer"></i>
+                            &nbsp Buttons
+                        </div>
+                        <div style="margin: 8px;">></div> 
+                    </div>  
+                    <div class="sous_button" style="display: none;">
+                        [sous-section]
+                    </div>
+                     
+                </div>
+                
+                <div class="chart" style="display: flex;">
+                    <div style="margin: 5px;">
+                    <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div style="margin: 5px;">
+                    &nbsp Charts
+                    </div>
+                </div>
+        
+                <div class="forms">
+                    <div style="display:flex; justify-content: space-between;">
+                        <div onclick="show3()" style="margin: 8px;">
+                            <i class="fa-solid fa-newspaper"></i>
+                            &nbsp Forms
+                        </div>
+                        <div style="margin: 8px;">></div>
+                    </div>
+                    <div class="sous_form" style="display: none;">
+                    [sous-section]
+                    </div>
+                </div>
+        
+                <div class="icons">
+                    <div style="display:flex; justify-content: space-between;">
+                        <div onclick="show4()" style="margin: 8px;">
+                            <i class="fa-solid fa-star"></i>
+                            &nbsp Icons
+                        </div>
+                        <div style="margin: 8px;">></div>
+                         
+                    </div>
+                    <div class="sous_icon" style="display: none;">
+                        [sous-section]
+                    </div>
+                   
+                </div>   
+                
+                <div class="notification">
+                    <div style="display :flex; justify-content: space-between;">
+                        <div onclick="show5()" style="margin: 8px;">
+                            <i class="fa-solid fa-bell"></i>
+                            &nbsp Notification
+                        </div>
+                        
+                        <div style="margin: 8px;">></div>
+                    </div>
+                </div>
+                    <div class="sous_notif" style="display: none;">
+                        [sous-section]
+                    </div>
+               
+                <div class="widget" style="display:flex;">
+                    <div style="margin: 8px;">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </div>
+                    <div style="margin: 5px;">
+                    &nbsp Widget
+                    </div>
+                </div>
+            </div>
+            
+<br>
+            <div>
+                EXTRAS
+                <div class="pages" style="display : flex; justify-content: space-between;">
+
+                    <div>
+                        <div onclick="show6()" style="margin: 8px;">
+                            <i class="fa-solid fa-star"></i>
+                            &nbsp Pages
+                        </div>
+                        
+                    </div>
+
+                    <div style="margin: 8px;">></div>
+                </div>
+
+                <div class="sous_page" style="display: none;">
+                    [sous-section]
+                </div>
+            </div>
+<br>
+            <div>
+                <div class="docs"><i class="fa-brands fa-dochub"></i> Docs</div>
+                <div class="try">Try CoreUIPRO</div>
+        
+            </div>
+                
+            
+        
+        
+        
+            </div>
+
+        
+                                                <!-- navbar section -->
+        <div style="display:block;">
+            <div class="navbar">
+                
+            
+                <div class="nav_left">
+                    <div class="tirait">
+                    <div class="tirait1"></div>
+                    <div class="tirait2"></div>
+                    <div class="tirait3"></div>
+                    </div>
+
+                    <div>Dashboard</div>
+                    <div>Users</div>
+                    <div>Settings</div>
+                </div>
+
+                <div class="nav_right">
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                    
+
+                </div>
+            </div>
+        
+        
+            <div class="section">
+                <div style="margin-left: 40px;">Home /  Dashboard </div>
+            </div>
+            
+                                                    <!-- main part -->
+
+            
+            <div class="mainpart" id="app">
+                <br>
+                <div class="first" style="display: flex;">
+                    <div class="users"></div>
+                    <div class="income"></div>
+                    <div class="rate"></div>
+                    <div class="sessions"></div>
+                </div>
+
+                <br>
+
+                <div class="sec">
+                    <div class="traffic">
+                        <div class="top"></div>
+                        <div class="mid"></div>
+                        <div class="bot"></div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- {{user}} {{income}} {{rate}} {{sessions}} -->
+            </div>
+        </div>
+    
+<script>
+ const vm = Vue.createApp({
+    data(){
+        return{
+            user : 2995,
+            income : 'bonjour',
+            rate : '10%',
+            sessions : 4489,
+        }
+    }
+ }).mount('#app')
+
+
+</script>
+       
+
+</div>    
+
+
+
+</body>
+</html>
